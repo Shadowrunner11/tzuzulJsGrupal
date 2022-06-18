@@ -6,11 +6,12 @@ const speedConfig = {
 }
 
 const initial = {
-    message : 'Welcome to my game',
+    message : 'Bienvenidos a esta Tierra',
     options : [
-        {message:'Opcion 1'},
-        {message:'Opcion 2'},
-        {message:'Opcion 3'}
+        {message:'Nueva partida'},
+        {message:'Cargar partida'},
+        {message:'Configuracion'},
+        {message:'Salir del juego'},
     ]
 }
 
