@@ -6,6 +6,6 @@ const { message, options } = initial
 
 const initialMenu = new Menu(message, options)
 
-initialMenu.showMenu()
+await initialMenu.showMenu()
 const option = prompt('')
-menuConfig.showMenu()
+await menuConfig.showMenu()
