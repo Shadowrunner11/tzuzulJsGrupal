@@ -12,6 +12,10 @@ class Menu{
         this.speed = speed
 
     }
+
+    validateInput(input, limit){
+        return input !== NaN && input < limit
+    }
     async showMenu(){
         await new Promise( resolve =>{
             let charPosition = 1
@@ -36,6 +40,13 @@ class Menu{
 
             })
         }
+
+        let userInput = Number(prompt(""))
+        while(!this.validateInput(userInput, this.options.length)){
+            userInput  = Number(prompt("Opcion no valida"))
+        } 
+
+        return userInput
     }
 }
 
